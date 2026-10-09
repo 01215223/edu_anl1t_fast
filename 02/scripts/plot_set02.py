@@ -1,6 +1,6 @@
 """Plots the sketches of problem set 02 (exercises 1, 3.1, 3.2, 7.3) for a visual check.
 
-The PNG is written next to this script by default (it is git-ignored); pass another output
+The PNG is written next to this script by default (it is tracked and embedded in the solution); pass another output
 path as the first argument. Requires numpy and matplotlib.
 """
 import os
