@@ -30,7 +30,7 @@ Funkcje: $f(x)=[x]$, $g(x)=x-[x]$.
 - Wartości $g$ leżą w przedziale $[0,1)$; $g$ jest okresowa z okresem $1$, bo $[x+1]=[x]+1$, więc $g(x+1)=x+1-[x]-1=g(x)$.
 - Na każdym przedziale $[n,n+1)$ $g$ rośnie (nachylenie $1$), a w punktach $x=n$ przyjmuje wartość $0$ (skok w dół z $1$ do $0$).
 
-**Uzasadnienie rachunkowe.** Warunek $[x]=n \iff n\le x<n+1$ pozwala sprawdzić każdy punkt wykresu. Na przykład $[2{,}7]=2$ i $g(2{,}7)=0{,}7$; $[-0{,}5]=-1$ i $g(-0{,}5)=0{,}5$.
+**Uzasadnienie rachunkowe.** Warunek $[x]=n \iff n\le x\lt n+1$ pozwala sprawdzić każdy punkt wykresu. Na przykład $[2{,}7]=2$ i $g(2{,}7)=0{,}7$; $[-0{,}5]=-1$ i $g(-0{,}5)=0{,}5$.
 
 ![Wykresy f i g](scripts/plots_set02.png)
 
@@ -64,7 +64,7 @@ Ponieważ $-\dfrac{3}{22}\pi\in\left[-\dfrac\pi2,\dfrac\pi2\right]$, mamy $\arcs
 
 ### 3.1. $f_1(x)=\sin(\arcsin x)$, $f_2(x)=\arcsin(\sin x)$
 
-**$f_1$.** Dziedzina to $[-1,1]$, a na niej $\sin(\arcsin x)=x$. Funkcja nie jest okresowa: jej dziedzina jest ograniczona, a dla okresu $T>0$ musiałoby być $x+T\in D_{f_1}$ dla każdego $x\in D_{f_1}$, co dla przedziału ograniczonego jest niemożliwe. Wykres to odcinek prosty $y=x$ na $[-1,1]$.
+**$f_1$.** Dziedzina to $[-1,1]$, a na niej $\sin(\arcsin x)=x$. Funkcja nie jest okresowa: jej dziedzina jest ograniczona, a dla okresu $T\gt 0$ musiałoby być $x+T\in D_{f_1}$ dla każdego $x\in D_{f_1}$, co dla przedziału ograniczonego jest niemożliwe. Wykres to odcinek prosty $y=x$ na $[-1,1]$.
 
 **$f_2$.** Dla $x\in\left[-\frac\pi2,\frac\pi2\right]$ mamy $f_2(x)=x$, a dla $x\in\left[\frac\pi2,\frac{3\pi}2\right]$ mamy $f_2(x)=\pi-x$. Stąd $f_2$ jest falą trójkątną o wartościach w $\left[-\frac\pi2,\frac\pi2\right]$, rosnącą na $\left[-\frac\pi2,\frac\pi2\right]$ i malejącą na $\left[\frac\pi2,\frac{3\pi}2\right]$.
 
@@ -111,7 +111,7 @@ $$
 
 ### 4.2. $f(x)=\log_2\left(x+\sqrt{x^2+1}\right)$
 
-Dziedzina: $x+\sqrt{x^2+1}>0$ dla każdego $x$, bo $\sqrt{x^2+1}>|x|\ge-x$. Zatem $D_f=\mathbb{R}$, symetryczna.
+Dziedzina: $x+\sqrt{x^2+1}\gt 0$ dla każdego $x$, bo $\sqrt{x^2+1}\gt |x|\ge-x$. Zatem $D_f=\mathbb{R}$, symetryczna.
 
 Iloczyn argumentów przy $x$ i $-x$:
 
@@ -131,7 +131,7 @@ $$
 
 ## Zadanie 5
 
-Ciąg jest monotoniczny, jeśli dla pewnego $n_0$ zachodzi $a_{n+1}>a_n$ dla wszystkich $n\ge n_0$ albo $a_{n+1}<a_n$ dla wszystkich $n\ge n_0$.
+Ciąg jest monotoniczny, jeśli dla pewnego $n_0$ zachodzi $a_{n+1}\gt a_n$ dla wszystkich $n\ge n_0$ albo $a_{n+1}\lt a_n$ dla wszystkich $n\ge n_0$.
 
 ### 5.1. $a_n=n^2-8n+7$
 
@@ -141,21 +141,21 @@ $$
 a_{n+1}-a_n=\big((n+1)^2-8(n+1)+7\big)-\big(n^2-8n+7\big)=2n-7.
 $$
 
-- Dla $n\le3$ różnica jest ujemna: $a_1>a_2>a_3>a_4$ (wartości $0,-5,-8,-9$).
-- Dla $n\ge4$ różnica jest dodatnia: $a_4<a_5<a_6<\dots$.
+- Dla $n\le3$ różnica jest ujemna: $a_1\gt a_2\gt a_3\gt a_4$ (wartości $0,-5,-8,-9$).
+- Dla $n\ge4$ różnica jest dodatnia: $a_4\lt a_5\lt a_6\lt \dots$.
 
-Ciąg **nie jest monotoniczny** na całym $\mathbb{N}$ (maleje do $a_4$, potem rośnie). Jest jednak rosnący od $n_0=4$: dla każdego $n\ge4$ mamy $a_{n+1}>a_n$.
+Ciąg **nie jest monotoniczny** na całym $\mathbb{N}$ (maleje do $a_4$, potem rośnie). Jest jednak rosnący od $n_0=4$: dla każdego $n\ge4$ mamy $a_{n+1}\gt a_n$.
 
-**Wynik:** nie jest monotoniczny; dla $n_0=4$ zachodzi $a_{n+1}>a_n$ dla $n\ge n_0$.
+**Wynik:** nie jest monotoniczny; dla $n_0=4$ zachodzi $a_{n+1}\gt a_n$ dla $n\ge n_0$.
 
 ### 5.2. $a_n=-\dfrac{2}{n+3\arctan n}$
 
-Niech $d_n=n+3\arctan n$. Dla $n\in\mathbb{N}$ mamy $\arctan n\ge\arctan1=\frac\pi4>0$, więc $d_n>0$ i ułamek ma sens.
+Niech $d_n=n+3\arctan n$. Dla $n\in\mathbb{N}$ mamy $\arctan n\ge\arctan1=\frac\pi4\gt 0$, więc $d_n\gt 0$ i ułamek ma sens.
 
-Funkcja $d(t)=t+3\arctan t$ jest rosnąca (suma rosnących funkcji), więc $d_{n+1}>d_n>0$. Funkcja $t\mapsto-\dfrac{2}{t}$ jest rosnąca na $(0,\infty)$ (dla $0<t_1<t_2$: $-\frac2{t_1}<-\frac2{t_2}$). Zatem
+Funkcja $d(t)=t+3\arctan t$ jest rosnąca (suma rosnących funkcji), więc $d_{n+1}\gt d_n\gt 0$. Funkcja $t\mapsto-\dfrac{2}{t}$ jest rosnąca na $(0,\infty)$ (dla $0\lt t_1\lt t_2$: $-\frac2{t_1}\lt -\frac2{t_2}$). Zatem
 
 $$
-a_{n+1}=-\frac{2}{d_{n+1}}>-\frac{2}{d_n}=a_n\qquad\text{dla każdego }n\ge1.
+a_{n+1}=-\frac{2}{d_{n+1}}\gt -\frac{2}{d_n}=a_n\qquad\text{dla każdego }n\ge1.
 $$
 
 **Wynik:** ciąg jest (ściśle) **rosnący** od $n_0=1$.
@@ -172,7 +172,7 @@ $$
 \sin\frac{11}{7}=\cos\left(\frac\pi2-\frac{11}{7}\right)=\cos\left(\frac{7\pi-22}{14}\right).
 $$
 
-Liczba $\dfrac{22-7\pi}{14}$ jest dodatnia (bo $7\pi\approx21{,}991<22$), mała, i leży w $[0,\pi]$. Ponieważ $\cos$ jest parzysta, $\cos\dfrac{7\pi-22}{14}=\cos\dfrac{22-7\pi}{14}$, więc
+Liczba $\dfrac{22-7\pi}{14}$ jest dodatnia (bo $7\pi\approx21{,}991\lt 22$), mała, i leży w $[0,\pi]$. Ponieważ $\cos$ jest parzysta, $\cos\dfrac{7\pi-22}{14}=\cos\dfrac{22-7\pi}{14}$, więc
 
 $$
 \arccos\left(\sin\frac{11}{7}\right)=\frac{22-7\pi}{14}\approx 0{,}000632.
@@ -268,7 +268,7 @@ $$
 a_{4k+1}=0,\qquad a_{4k+2}=-1,\qquad a_{4k+3}=0,\qquad a_{4k+4}=1.
 $$
 
-Zatem $a_{n+1}-a_n$ dla $n=4k+1$ wynosi $-1<0$ (spadek), a dla $n=4k+2$ wynosi $+1>0$ (wzrost). W każdym ogonie $\{n\ge n_0\}$ występują oba typy różnic, więc dla żadnego $n_0$ ciąg nie jest monotoniczny od $n_0$.
+Zatem $a_{n+1}-a_n$ dla $n=4k+1$ wynosi $-1\lt 0$ (spadek), a dla $n=4k+2$ wynosi $+1\gt 0$ (wzrost). W każdym ogonie $\{n\ge n_0\}$ występują oba typy różnic, więc dla żadnego $n_0$ ciąg nie jest monotoniczny od $n_0$.
 
 **Wynik:** **nie jest monotoniczny** (dla żadnego $n_0$).
 
@@ -276,13 +276,13 @@ Zatem $a_{n+1}-a_n$ dla $n=4k+1$ wynosi $-1<0$ (spadek), a dla $n=4k+2$ wynosi $
 
 Oznaczmy $\theta_n=\dfrac{10\pi}{n+1}$. Wtedy $a_n=\sin\theta_n$, a $\theta_n$ maleje, gdy $n$ rośnie.
 
-- Dla $n\ge19$ mamy $n+1\ge20$, więc $\theta_n\le\dfrac{10\pi}{20}=\dfrac\pi2$. Na przedziale $\left(0,\frac\pi2\right]$ funkcja $\sin$ jest ściśle rosnąca, więc $\theta_{n+1}<\theta_n\le\frac\pi2$ daje $a_{n+1}=\sin\theta_{n+1}<\sin\theta_n=a_n$. Zatem $a_{n+1}<a_n$ dla każdego $n\ge19$.
-- Dla $n_0\le18$ ciąg nie jest od $n_0$ malejący: $a_{19}=\sin\frac\pi2=1>a_{18}=\sin\frac{10\pi}{19}\approx0{,}997$. Zatem warunek „malejący od $n_0$” wymaga $n_0\ge19$.
+- Dla $n\ge19$ mamy $n+1\ge20$, więc $\theta_n\le\dfrac{10\pi}{20}=\dfrac\pi2$. Na przedziale $\left(0,\frac\pi2\right]$ funkcja $\sin$ jest ściśle rosnąca, więc $\theta_{n+1}\lt \theta_n\le\frac\pi2$ daje $a_{n+1}=\sin\theta_{n+1}\lt \sin\theta_n=a_n$. Zatem $a_{n+1}\lt a_n$ dla każdego $n\ge19$.
+- Dla $n_0\le18$ ciąg nie jest od $n_0$ malejący: $a_{19}=\sin\frac\pi2=1\gt a_{18}=\sin\frac{10\pi}{19}\approx0{,}997$. Zatem warunek „malejący od $n_0$” wymaga $n_0\ge19$.
 - Dla żadnego $n_0$ ciąg nie jest rosnący od $n_0$, bo dla $n\ge19$ jest malejący.
 
 Dla przejrzystości: $a_{11}\approx0{,}5$, $a_{14}\approx0{,}866$, $a_{17}\approx0{,}985$, $a_{19}=1$, $a_{20}\approx0{,}9945$.
 
-**Wynik:** ciąg jest **malejący** od $n_0=19$ (ściślej: $a_{n+1}<a_n$ dla $n\ge19$).
+**Wynik:** ciąg jest **malejący** od $n_0=19$ (ściślej: $a_{n+1}\lt a_n$ dla $n\ge19$).
 
 ---
 

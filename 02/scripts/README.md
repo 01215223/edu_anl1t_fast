@@ -20,7 +20,7 @@ Python packages (tested with Python 3.11):
 Run them from this folder:
 
     python check_set02.py
-    python plot_set02.py      # writes plots_set02.png next to the script (git-ignored)
+    python plot_set02.py      # writes plots_set02.png next to the script (tracked; it is embedded in the solution)
 
 `check_set02.py` exits with status 1 when a check fails. Numeric checks on grids support the
 answers but do not replace the proofs written in the solution.
