@@ -73,20 +73,20 @@ Ponieważ $-\dfrac{3}{22}\pi\in\left[-\dfrac\pi2,\dfrac\pi2\right]$, mamy $\arcs
 
 **Wynik:** $f_1$ nie jest okresowa; $f_2$ jest okresowa, okres podstawowy $2\pi$.
 
-### 3.2. $f_1(x)=\sin(\pi x)$, $f_2(x)=\operatorname{ctg}x\cdot|\sin x|$
+### 3.2. $f_1(x)=\sin(\pi x)$, $f_2(x)=\mathrm{ctg}x\cdot|\sin x|$
 
 **$f_1$.** $\sin(\pi(x+T))=\sin(\pi x)$ dla każdego $x$ wymaga $\pi T\in 2\pi\mathbb{Z}$, czyli $T\in2\mathbb{Z}$. Okres podstawowy to $2$.
 
 **$f_2$.** Dziedzina: $\sin x\neq0$, czyli $x\notin\pi\mathbb{Z}$. Dla takich $x$:
 
 $$
-\operatorname{ctg}x\cdot|\sin x|=\frac{\cos x}{\sin x}\,|\sin x|=\cos x\cdot\operatorname{sgn}(\sin x).
+\mathrm{ctg}x\cdot|\sin x|=\frac{\cos x}{\sin x}\,|\sin x|=\cos x\cdot\mathrm{sgn}(\sin x).
 $$
 
-Zatem $f_2(x)=\cos x$ na $(0,\pi)$ oraz $f_2(x)=-\cos x$ na $(\pi,2\pi)$. Ponieważ $\cos(x+\pi)=-\cos x$ i $\operatorname{sgn}\sin(x+\pi)=-\operatorname{sgn}\sin x$, mamy
+Zatem $f_2(x)=\cos x$ na $(0,\pi)$ oraz $f_2(x)=-\cos x$ na $(\pi,2\pi)$. Ponieważ $\cos(x+\pi)=-\cos x$ i $\mathrm{sgn}\sin(x+\pi)=-\mathrm{sgn}\sin x$, mamy
 
 $$
-f_2(x+\pi)=(-\cos x)(-\operatorname{sgn}\sin x)=f_2(x),
+f_2(x+\pi)=(-\cos x)(-\mathrm{sgn}\sin x)=f_2(x),
 $$
 
 więc $\pi$ jest okresem. Każdy okres $T$ musi spełniać: dziedzina $\mathbb{R}\setminus\pi\mathbb{Z}$ jest niezmiennicza względem przesunięcia o $T$, więc $T\in\pi\mathbb{Z}$. Dla $T=\pi$ wszystko działa, a więc okres podstawowy to $\pi$ (zob. też wykres: na każdym przedziale $(k\pi,(k+1)\pi)$ wykres jest kawałkiem $\pm\cos x$, a obydwa kawałki są takie same po przesunięciu o $\pi$).
@@ -155,7 +155,7 @@ Niech $d_n=n+3\arctan n$. Dla $n\in\mathbb{N}$ mamy $\arctan n\ge\arctan1=\frac\
 Funkcja $d(t)=t+3\arctan t$ jest rosnąca (suma rosnących funkcji), więc $d_{n+1}\gt d_n\gt 0$. Funkcja $t\mapsto-\dfrac{2}{t}$ jest rosnąca na $(0,\infty)$ (dla $0\lt t_1\lt t_2$: $-\frac2{t_1}\lt -\frac2{t_2}$). Zatem
 
 $$
-a_{n+1}=-\frac{2}{d_{n+1}}\gt -\frac{2}{d_n}=a_n\qquad\text{dla każdego }n\ge1.
+a_{n+1}=-\frac{2}{d_{n+1}}\gt -\frac{2}{d_n}=a_n\qquad n\ge1.
 $$
 
 **Wynik:** ciąg jest (ściśle) **rosnący** od $n_0=1$.
