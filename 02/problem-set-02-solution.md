@@ -41,7 +41,11 @@ Funkcje: $f(x)=[x]$, $g(x)=x-[x]$.
 ### 2.1. $\arccos\left(\sin\left(\dfrac{32}{5}\pi\right)\right)$
 
 $$
-\frac{32}{5}\pi=6\pi+\frac{2}{5}\pi,\qquad \sin\left(6\pi+\frac25\pi\right)=\sin\frac25\pi=\cos\left(\frac\pi2-\frac25\pi\right)=\cos\frac{\pi}{10}.
+\frac{32}{5}\pi=6\pi+\frac{2}{5}\pi
+$$
+
+$$
+\sin\left(6\pi+\frac25\pi\right)=\sin\frac25\pi=\cos\left(\frac\pi2-\frac25\pi\right)=\cos\frac{\pi}{10}.
 $$
 
 Ponieważ $\dfrac{\pi}{10}\in[0,\pi]$, mamy $\arccos\left(\cos\dfrac{\pi}{10}\right)=\dfrac{\pi}{10}$.
@@ -80,7 +84,7 @@ Ponieważ $-\dfrac{3}{22}\pi\in\left[-\dfrac\pi2,\dfrac\pi2\right]$, mamy $\arcs
 **$f_2$.** Dziedzina: $\sin x\neq0$, czyli $x\notin\pi\mathbb{Z}$. Dla takich $x$:
 
 $$
-\mathrm{ctg}x\cdot|\sin x|=\frac{\cos x}{\sin x}\,|\sin x|=\cos x\cdot\mathrm{sgn}(\sin x).
+\mathrm{ctg}x\cdot|\sin x|=\frac{\cos x}{\sin x}\cdot|\sin x|=\cos x\cdot\mathrm{sgn}(\sin x).
 $$
 
 Zatem $f_2(x)=\cos x$ na $(0,\pi)$ oraz $f_2(x)=-\cos x$ na $(\pi,2\pi)$. Ponieważ $\cos(x+\pi)=-\cos x$ i $\mathrm{sgn}\sin(x+\pi)=-\mathrm{sgn}\sin x$, mamy
@@ -138,7 +142,7 @@ Ciąg jest monotoniczny, jeśli dla pewnego $n_0$ zachodzi $a_{n+1}\gt a_n$ dla 
 Różnica kolejnych wyrazów:
 
 $$
-a_{n+1}-a_n=\big((n+1)^2-8(n+1)+7\big)-\big(n^2-8n+7\big)=2n-7.
+a_{n+1}-a_n=\left((n+1)^2-8(n+1)+7\right)-\left(n^2-8n+7\right)=2n-7.
 $$
 
 - Dla $n\le3$ różnica jest ujemna: $a_1\gt a_2\gt a_3\gt a_4$ (wartości $0,-5,-8,-9$).
@@ -155,8 +159,10 @@ Niech $d_n=n+3\arctan n$. Dla $n\in\mathbb{N}$ mamy $\arctan n\ge\arctan1=\frac\
 Funkcja $d(t)=t+3\arctan t$ jest rosnąca (suma rosnących funkcji), więc $d_{n+1}\gt d_n\gt 0$. Funkcja $t\mapsto-\dfrac{2}{t}$ jest rosnąca na $(0,\infty)$ (dla $0\lt t_1\lt t_2$: $-\frac2{t_1}\lt -\frac2{t_2}$). Zatem
 
 $$
-a_{n+1}=-\frac{2}{d_{n+1}}\gt -\frac{2}{d_n}=a_n\qquad n\ge1.
+a_{n+1}=-\frac{2}{d_{n+1}}\gt -\frac{2}{d_n}=a_n
 $$
+
+dla każdego $n\ge1$.
 
 **Wynik:** ciąg jest (ściśle) **rosnący** od $n_0=1$.
 
@@ -264,9 +270,7 @@ Wyrażenie $2n+3^n$ jest dodatnie i ściśle rosnące w $n$ (suma dwóch ściśl
 
 Wyrazy mają okres $4$:
 
-$$
-a_{4k+1}=0,\qquad a_{4k+2}=-1,\qquad a_{4k+3}=0,\qquad a_{4k+4}=1.
-$$
+$a_{4k+1}=0$, $a_{4k+2}=-1$, $a_{4k+3}=0$, $a_{4k+4}=1$.
 
 Zatem $a_{n+1}-a_n$ dla $n=4k+1$ wynosi $-1\lt 0$ (spadek), a dla $n=4k+2$ wynosi $+1\gt 0$ (wzrost). W każdym ogonie $\{n\ge n_0\}$ występują oba typy różnic, więc dla żadnego $n_0$ ciąg nie jest monotoniczny od $n_0$.
 
