@@ -1,0 +1,12 @@
+{
+  "name": "problem-set-01-checks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Checks for the problem set 01 solution (KaTeX rendering of the Markdown file)",
+  "scripts": {
+    "check": "node render_check.js"
+  },
+  "dependencies": {
+    "katex": "^0.16.47"
+  }
+}
