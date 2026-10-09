@@ -2,7 +2,7 @@
 
 Zestaw zadań: [`problem-set-03-b.md`](problem-set-03-b.md) — zadania 1–6 (zadania 1–3 na zajęcia, 4–6 domowe).
 
-Skrypt sprawdzający liczbowo wszystkie granice: [`../03/scripts/check_set03.py`](../03/scripts/check_set03.py) (opis w [`../03/scripts/README.md`](../03/scripts/README.md)). Skrypt nie jest częścią rozwiązania.
+Skrypt sprawdzający liczbowo wszystkie granice: [`../03a/scripts/check_set03.py`](../03a/scripts/check_set03.py) (opis w [`../03a/scripts/README.md`](../03a/scripts/README.md)). Skrypt nie jest częścią rozwiązania.
 
 **Oznaczenia.** Funkcje hiperboliczne z zadania 6 zapisujemy jako $\cosh$, $\sinh$, $\tanh$ (w treści zadania: ch, sh, th).
 

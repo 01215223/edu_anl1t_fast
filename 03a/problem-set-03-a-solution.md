@@ -2,7 +2,7 @@
 
 Zestaw zadań: [`problem-set-03-a.md`](problem-set-03-a.md) — zadania 1–5 (zadania 1–2 na zajęcia, 3–5 domowe).
 
-Skrypt sprawdzający liczbowo wszystkie granice: [`../03/scripts/check_set03.py`](../03/scripts/check_set03.py) (opis w [`../03/scripts/README.md`](../03/scripts/README.md)). Skrypt nie jest częścią rozwiązania.
+Skrypt sprawdzający liczbowo wszystkie granice: [`scripts/check_set03.py`](scripts/check_set03.py) (opis w [`scripts/README.md`](scripts/README.md)). Skrypt nie jest częścią rozwiązania.
 
 **Oznaczenia.** $\lim$ oznacza $\lim_{n\to\infty}$. $\mathbb{N}=\{1,2,3,\dots\}$.
 
